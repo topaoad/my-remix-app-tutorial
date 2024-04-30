@@ -36,3 +36,8 @@ Make sure to deploy the output of `remix build`
 
 - `build/server`
 - `build/client`
+
+### メモ
+
+- contacts.$contactId_.edit.tsxのように_がある理由は、contacts.$contactId.edit.tsx というファイル名だと、contacts/以下のネストされたファイルとして認識されてしまうため。
+  ※そうしないと、$contactId のレイアウトを持つファイルとして認識されてしまうため。(しかも、outlet がないと表示すらされない)
